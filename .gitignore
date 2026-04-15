@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# ML artifacts
+ml/data/raw/
+ml/data/interim/
+ml/data/processed/
+ml/artifacts/
+wandb/
+*.pt
+*.pth
+*.onnx
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/

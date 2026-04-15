@@ -1,0 +1,11 @@
+seed: 42
+batch_size: 16
+epochs: 40
+lr: 3.0e-4
+class_weights: [1.0, 2.5]  # upweight minority (stone) class
+data:
+  train_manifest: data/processed/ct/train.csv
+  val_manifest: data/processed/ct/val.csv
+  test_manifest: data/processed/ct/test.csv
+  size: 512
+out_dir: artifacts/baseline_ct

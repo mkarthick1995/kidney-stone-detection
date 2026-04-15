@@ -1,0 +1,17 @@
+seed: 42
+batch_size: 16
+class_weights: [1.0, 2.0]
+stage_a:
+  lr: 1.0e-3
+  epochs: 30
+stage_b:
+  lr: 1.0e-5
+  epochs: 15
+data:
+  ct_train: data/processed/ct/train.csv
+  us_train: data/processed/us/train.csv
+  ct_val: data/processed/ct/val.csv
+  us_val: data/processed/us/val.csv
+  ct_test: data/processed/ct/test.csv
+  us_test: data/processed/us/test.csv
+out_dir: artifacts/fusion

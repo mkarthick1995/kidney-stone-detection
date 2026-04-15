@@ -1,0 +1,11 @@
+seed: 42
+batch_size: 32
+epochs: 40
+lr: 3.0e-4
+class_weights: [1.0, 1.5]
+data:
+  train_manifest: data/processed/us/train.csv
+  val_manifest: data/processed/us/val.csv
+  test_manifest: data/processed/us/test.csv
+  size: 224
+out_dir: artifacts/baseline_us
